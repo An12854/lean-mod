@@ -1,5 +1,6 @@
 {
   "item.minecraft.potion.effect.lean_potion": "Poción de Lean",
   "item.minecraft.splash_potion.effect.lean_potion": "Poción de Lean arrojadiza",
-  "item.minecraft.lingering_potion.effect.lean_potion": "Poción de Lean persistente"
+  "item.minecraft.lingering_potion.effect.lean_potion": "Poción de Lean persistente",
+  "item.leanmod.lean_bucket": "Balde de Lean"
 }
