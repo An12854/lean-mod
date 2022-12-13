@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "leanmod:block/lean_log",
+    "side": "leanmod:block/lean_log"
+  }
+}

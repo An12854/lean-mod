@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "leanmod:block/lean_sapling"
+  },
+  "render_type": "cutout"
+}
