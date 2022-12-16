@@ -3,5 +3,13 @@
   "item.minecraft.splash_potion.effect.lean_potion": "Poção arremessável de Lean",
   "item.minecraft.lingering_potion.effect.lean_potion": "Poção prolongada de Lean",
   "item.minecraft.tipped_arrow.effect.lean_potion": "Flecha de Lean",
-  "item.leanmod.lean_bucket": "Balde de Lean"
+  "item.leanmod.lean_bucket": "Balde de Lean",
+
+  "block.leanmod.lean_log": "Lean Log",
+  "block.leanmod.lean_planks": "Lean Planks",
+  "block.leanmod.lean_wood": "Lean Wood",
+  "block.leanmod.stripped_lean_log": "Stripped Lean Log",
+  "block.leanmod.stripped_lean_wood": "Stripped Lean Wood",
+  "block.leanmod.lean_leaves": "Lean Leaves",
+  "block.leanmod.lean_sapling": "Lean Sapling"
 }

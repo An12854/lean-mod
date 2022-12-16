@@ -1,6 +1,8 @@
 package com.an12854.leanmod;
 
 import com.an12854.leanmod.potion.ModPotions;
+import com.an12854.leanmod.world.feature.ModConfiguredFeatures;
+import com.an12854.leanmod.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -64,6 +66,13 @@ public class Leanmod {
         ModBlocks.register(modEventBus);
 
         ModPotions.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
+
+
+        modEventBus.addListener(this::commonSetup);
 
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);

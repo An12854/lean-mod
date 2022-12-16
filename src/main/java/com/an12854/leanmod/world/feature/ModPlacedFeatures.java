@@ -18,11 +18,11 @@ public class ModPlacedFeatures {
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, Leanmod.MODID);
 
 
-    public static final RegistryObject<PlacedFeature> LEAN_CHECKED = PLACED_FEATURES.register("red_maple_checked",
+    public static final RegistryObject<PlacedFeature> LEAN_CHECKED = PLACED_FEATURES.register("lean_checked",
             () -> new PlacedFeature(ModConfiguredFeatures.LEAN.getHolder().get(),
                     List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.LEAN_SAPLING.get()))));
 
-    public static final RegistryObject<PlacedFeature> LEAN_PLACED = PLACED_FEATURES.register("red_maple_placed",
+    public static final RegistryObject<PlacedFeature> LEAN_PLACED = PLACED_FEATURES.register("lean_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.LEAN_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3, 0.1f, 2))));
 
