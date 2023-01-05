@@ -32,21 +32,16 @@ public class ModBlocks {
             () -> new LiquidBlock(ModFluids.SOURCE_LEAN_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static final RegistryObject<Block> LEAN_LOG = registerBlock("lean_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> LEAN_WOOD = registerBlock("lean_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> STRIPPED_LEAN_LOG = registerBlock("stripped_lean_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> STRIPPED_LEAN_WOOD = registerBlock("stripped_lean_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
-                    .requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> LEAN_PLANKS = registerBlock("lean_planks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .requiresCorrectToolForDrops()) {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;

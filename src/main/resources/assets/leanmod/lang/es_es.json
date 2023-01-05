@@ -5,11 +5,11 @@
   "item.minecraft.tipped_arrow.effect.lean_potion": "Flecha de Lean",
   "item.leanmod.lean_bucket": "Balde de Lean",
 
-  "block.leanmod.lean_log": "Lean Log",
-  "block.leanmod.lean_planks": "Lean Planks",
-  "block.leanmod.lean_wood": "Lean Wood",
-  "block.leanmod.stripped_lean_log": "Stripped Lean Log",
-  "block.leanmod.stripped_lean_wood": "Stripped Lean Wood",
-  "block.leanmod.lean_leaves": "Lean Leaves",
-  "block.leanmod.lean_sapling": "Lean Sapling"
+  "block.leanmod.lean_log": "Tronco de lean",
+  "block.leanmod.lean_planks": "Tablones de lean",
+  "block.leanmod.lean_wood": "Leño de lean",
+  "block.leanmod.stripped_lean_log": "Tronco de lean sin corteza",
+  "block.leanmod.stripped_lean_wood": "Leño de lean sin corteza",
+  "block.leanmod.lean_leaves": "Hojas de lean",
+  "block.leanmod.lean_sapling": "Brote de lean"
 }

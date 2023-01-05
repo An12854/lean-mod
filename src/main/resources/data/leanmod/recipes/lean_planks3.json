@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "leanmod:stripped_lean_wood"
+    }
+  ],
+  "result": {
+    "item": "leanmod:lean_planks",
+    "count": 4
+  }
+}

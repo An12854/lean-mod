@@ -15,9 +15,15 @@ It's also my first project on a real IDE.
 
 • Lean Bucket
 
+• Lean Wood and variants
+
+• Lean Planks
+
 ## Features
 
 • The potion gives you Blindness, Weakness, Mining Fatigue,
 Nausea, Hunger and Slowness, all level V, to represent the dangers of real lean.
+
+• The lean wood is just cosmetic for now
 
 This is so scuffed, I'm sorry
