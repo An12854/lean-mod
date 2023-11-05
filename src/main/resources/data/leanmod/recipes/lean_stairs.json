@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "leanmod:lean_planks"
+    }
+  },
+  "result": {
+    "item": "leanmod:lean_stairs",
+    "count": 4
+  }
+}

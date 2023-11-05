@@ -7,6 +7,9 @@
 
   "block.leanmod.lean_log": "Tronco de lean",
   "block.leanmod.lean_planks": "Tábuas de lean",
+  "block.leanmod.lean_stairs": "Escadas de lean",
+  "block.leanmod.lean_slab": "Degrau de Lean",
+  "block.leanmod.lean_button": "Botão de lean",
   "block.leanmod.lean_wood": "Madeira de lean",
   "block.leanmod.stripped_lean_log": "Tronco de lean decascado",
   "block.leanmod.stripped_lean_wood": "Madeira de lean descascada",

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "leanmod:lean_planks"
+    }
+  ],
+  "result": {
+    "item": "leanmod:lean_button",
+    "count": 1
+  }
+}

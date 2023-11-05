@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "leanmod:block/lean_slab"
+    },
+    "type=double": {
+      "model": "leanmod:block/lean_planks"
+    },
+    "type=top": {
+      "model": "leanmod:block/lean_slab_top"
+    }
+  }
+}

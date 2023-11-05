@@ -79,6 +79,16 @@ public class ModBlocks {
                 }
             }, CreativeModeTab.TAB_DECORATIONS);
 
+    //Idc if it's deprecated, problem for future me
+    public static final RegistryObject<Block> LEAN_STAIRS = registerBlock("lean_stairs",
+            () -> new StairBlock(LEAN_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)) , CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LEAN_SLAB = registerBlock("lean_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)) , CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LEAN_BUTTON = registerBlock("lean_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)) , CreativeModeTab.TAB_REDSTONE);
+
     public static final RegistryObject<Block> LEAN_SAPLING = registerBlock("lean_sapling",
             () -> new SaplingBlock(new LeanTreeGrower(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), CreativeModeTab.TAB_DECORATIONS);

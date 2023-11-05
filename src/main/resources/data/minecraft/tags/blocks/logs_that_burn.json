@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "leanmod:lean_log",
+    "leanmod:lean_wood",
+    "leanmod:stripped_lean_log",
+    "leanmod:stripped_lean_wood"
+  ]
+}
