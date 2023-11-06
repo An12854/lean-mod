@@ -89,6 +89,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> LEAN_BUTTON = registerBlock("lean_button",
             () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)) , CreativeModeTab.TAB_REDSTONE);
 
+    public static final RegistryObject<Block> LEAN_FENCE = registerBlock("lean_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> LEAN_SAPLING = registerBlock("lean_sapling",
             () -> new SaplingBlock(new LeanTreeGrower(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), CreativeModeTab.TAB_DECORATIONS);
