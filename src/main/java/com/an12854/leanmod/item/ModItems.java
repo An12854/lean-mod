@@ -18,7 +18,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Leanmod.MODID);
     public static final RegistryObject<Item> LEAN_BUCKET = ITEMS.register("lean_bucket",
             () -> new BucketItem(ModFluids.SOURCE_LEAN_WATER,
-                    new Item.Properties().tab(CreativeModeTab.TAB_MISC).craftRemainder(Items.BUCKET).stacksTo(1)));
+                    new Item.Properties().tab(ModCreativeModeTab.LEAN_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> LEAN_SIGN = ITEMS.register("lean_sign",
+            () -> new SignItem(new Item.Properties().tab(ModCreativeModeTab.LEAN_TAB).stacksTo(16), ModBlocks.LEAN_SIGN.get(), ModBlocks.LEAN_WALL_SIGN.get()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

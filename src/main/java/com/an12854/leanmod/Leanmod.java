@@ -1,5 +1,7 @@
 package com.an12854.leanmod;
 
+import com.an12854.leanmod.block.entity.ModBlockEntities;
+import com.an12854.leanmod.block.entity.ModWoodTypes;
 import com.an12854.leanmod.potion.ModPotions;
 import com.an12854.leanmod.world.feature.ModConfiguredFeatures;
 import com.an12854.leanmod.world.feature.ModPlacedFeatures;
@@ -7,12 +9,16 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -67,6 +73,8 @@ public class Leanmod {
 
         ModPotions.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
@@ -86,12 +94,11 @@ public class Leanmod {
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+    private void clientSetup(final FMLClientSetupEvent event) {
+        WoodType.register(ModWoodTypes.LEAN);
+        BlockEntityRenderers.register(ModBlockEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
     }
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -101,6 +108,9 @@ public class Leanmod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_LEAN_WATER.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEAN_WATER.get(), RenderType.translucent());
+            event.enqueueWork(() -> {
+                Sheets.addWoodType(ModWoodTypes.LEAN);
+            });
         }
     }
 }

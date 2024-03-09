@@ -12,6 +12,8 @@
   "block.leanmod.lean_button": "Botão de lean",
   "block.leanmod.lean_wood": "Madeira de lean",
   "block.leanmod.lean_fence": "Cerca de lean",
+  "block.leanmod.lean_fence_gate": "Portão de lean",
+  "block.leanmod.lean_pressure_plate": "Placa de pressão de lean",
   "block.leanmod.stripped_lean_log": "Tronco de lean decascado",
   "block.leanmod.stripped_lean_wood": "Madeira de lean descascada",
   "block.leanmod.lean_leaves": "Folhas de lean",

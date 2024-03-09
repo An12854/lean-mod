@@ -1,4 +1,6 @@
 {
+  "itemGroup.leantab": "Lean Mod",
+
   "item.minecraft.potion.effect.lean_potion": "Lean Potion",
   "item.minecraft.splash_potion.effect.lean_potion": "Splash Potion of Lean",
   "item.minecraft.lingering_potion.effect.lean_potion": "Lingering Potion of Lean",
@@ -12,6 +14,9 @@
   "block.leanmod.lean_button": "Lean Button",
   "block.leanmod.lean_wood": "Lean Wood",
   "block.leanmod.lean_fence": "Lean Fence",
+  "block.leanmod.lean_fence_gate": "Lean Fence Gate",
+  "block.leanmod.lean_pressure_plate": "Lean Pressure Plate",
+  "block.leanmod.lean_sign": "Lean Sign",
   "block.leanmod.stripped_lean_log": "Stripped Lean Log",
   "block.leanmod.stripped_lean_wood": "Stripped Lean Wood",
   "block.leanmod.lean_leaves": "Lean Leaves",
